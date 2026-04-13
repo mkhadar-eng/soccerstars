@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – Soccer Stars Football Academy</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="inner.css">
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <div class="page-hero">
+    <div class="page-hero-content">
+      <div class="section-label">Get in Touch</div>
+      <h1>CONTACT<br><span>US</span></h1>
+    </div>
+    <div class="page-hero-bg-text">CONTACT</div>
+  </div>
+
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span class="ticker-text">Join Academy</span>
+      <span class="ticker-text">Book Trial</span>
+      <span class="ticker-text">Get in Touch</span>
+      <span class="ticker-text">Ask a Question</span>
+      <span class="ticker-text">Kampala Uganda</span>
+      <span class="ticker-text">Join Academy</span>
+      <span class="ticker-text">Book Trial</span>
+      <span class="ticker-text">Get in Touch</span>
+      <span class="ticker-text">Ask a Question</span>
+      <span class="ticker-text">Kampala Uganda</span>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="contact-grid">
+
+      <!-- Form -->
+      <div class="animate">
+        <div class="section-label">Send a Message</div>
+        <h2 class="section-title" style="margin-bottom:32px;">LET'S TALK<br><em>FOOTBALL</em></h2>
+
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="e.g. David" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="e.g. Ssemukutu" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+256 700 000 000">
+          </div>
+
+          <div class="form-group">
+            <label for="interest">I'm Interested In</label>
+            <select id="interest" name="interest">
+              <option value="">— Select a programme —</option>
+              <option value="beginner">Beginner Training (Ages 5–10)</option>
+              <option value="intermediate">Intermediate Training (Ages 11–14)</option>
+              <option value="elite">Elite Training (Ages 15–20)</option>
+              <option value="goalkeeper">Goalkeeper Training (All Ages)</option>
+              <option value="trial">Free Trial Session</option>
+              <option value="general">General Enquiry</option>
+              <option value="sponsorship">Sponsorship / Partnership</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" placeholder="Tell us about the player (age, experience, goals) or ask us anything..." required></textarea>
+          </div>
+
+          <button type="button" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:18px;" onclick="submitForm()">
+            Send Message ⚡
+          </button>
+
+          <div class="form-success" id="formSuccess">
+            ✅ Message sent! We'll get back to you within 24 hours.
+          </div>
+        </div>
+      </div>
+
+      <!-- Info Panel -->
+      <div class="contact-info-panel animate animate-delay-2">
+
+        <div class="contact-info-block">
+          <h4>📞 Phone & Email</h4>
+          <div class="contact-info-item">
+            <span class="ci-icon">📱</span>
+            <div class="ci-text">
+              <strong>Mobile</strong>
+              <p>+256 700 123 456<br>+256 772 987 654</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="ci-icon">✉️</span>
+            <div class="ci-text">
+              <strong>Email</strong>
+              <p>info@soccerstars.ug<br>coach@soccerstars.ug</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="ci-icon">🕐</span>
+            <div class="ci-text">
+              <strong>Office Hours</strong>
+              <p>Mon–Fri: 8:00 AM – 6:00 PM<br>Sat–Sun: 7:00 AM – 12:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-block" style="border-left-color:var(--blue-light);">
+          <h4>📍 Location</h4>
+          <div class="contact-info-item">
+            <span class="ci-icon">🏟️</span>
+            <div class="ci-text">
+              <strong>Main Training Ground</strong>
+              <p>Mengo hill road<br>Blue Park Stadium<br>Kampala, Uganda</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="ci-icon">🚌</span>
+            <div class="ci-text">
+              <strong>Getting Here</strong>
+              <p>5 min from Usafi Park.<br>Near Nakivubo Blue.</p>
+            </div>
+          </div>
+          <!-- Map SVG placeholder -->
+          <div class="map-placeholder" style="margin-top:16px;">
+             <iframe class="iframe-map"
+    width="100%"
+    height="100%"
+    style="border:0"
+    loading="lazy"
+    allowfullscreen
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.72019231636057!2d32.573205502936965!3d0.3056794265511288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc8e4beaf727%3A0x8362e1aa470754c0!2s7d1%20Church%20Rd%2C%20Kampala!5e0!3m2!1sen!2sug!4v1776034169865!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="contact-info-block" style="border-left-color:var(--red);">
+          <h4>🌐 Follow Us</h4>
+          <p style="font-size:0.85rem;color:var(--gray);margin-bottom:16px;">Stay up to date with training news, match results, and player highlights.</p>
+          <div class="social-links-grid">
+            <a class="social-link-btn" href="#">
+              <span class="soc-icon">f</span>
+              Facebook
+            </a>
+            <a class="social-link-btn" href="#">
+              <span class="soc-icon">𝕏</span>
+              Twitter
+            </a>
+            <a class="social-link-btn" href="#">
+              <span class="soc-icon">📷</span>
+              Instagram
+            </a>
+            <a class="social-link-btn" href="#">
+              <span class="soc-icon">▶</span>
+              YouTube
+            </a>
+            <a class="social-link-btn" href="#">
+              <span class="soc-icon">in</span>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick facts banner -->
+  <section style="background:var(--yellow);padding:48px 5%;">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;">
+      <div>
+        <div style="font-family:var(--font-display);font-size:2.5rem;color:var(--dark);line-height:1;">24h</div>
+        <div style="font-family:var(--font-condensed);font-size:0.8rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(0,0,0,0.6);">Response Time</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:2.5rem;color:var(--dark);line-height:1;">FREE</div>
+        <div style="font-family:var(--font-condensed);font-size:0.8rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(0,0,0,0.6);">Trial Session</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:2.5rem;color:var(--dark);line-height:1;">7 DAYS</div>
+        <div style="font-family:var(--font-condensed);font-size:0.8rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(0,0,0,0.6);">A Week Training</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-display);font-size:2.5rem;color:var(--dark);line-height:1;">NOW</div>
+        <div style="font-family:var(--font-condensed);font-size:0.8rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(0,0,0,0.6);">Enrolment Open</div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="components.js"></script>
+  <script src="main.js"></script>
+  <script>
+    function submitForm() {
+      const fields = ['firstName', 'lastName', 'email', 'message'];
+      let valid = true;
+      fields.forEach(id => {
+        const el = document.getElementById(id);
+        if (!el.value.trim()) {
+          el.style.borderColor = 'var(--red)';
+          valid = false;
+        } else {
+          el.style.borderColor = '';
+        }
+      });
+      if (valid) {
+        document.getElementById('formSuccess').style.display = 'block';
+        setTimeout(() => {
+          document.getElementById('formSuccess').style.display = 'none';
+        }, 5000);
+      }
+    }
+  </script>
+
+  <style>
+    @media (max-width: 600px) {
+      section[style*="grid-template-columns:repeat(4"] > div > div:nth-child(n) {
+        flex: none;
+      }
+      section > div[style*="grid-template-columns:repeat(4"] {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+      }
+    }
+  </style>
+</body>
+</html>
